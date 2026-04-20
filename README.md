@@ -157,7 +157,7 @@ BRD → PRD → IMPL → UT → QA → PR
 **Input:** Business understanding + optional customer doc
 
 ```id="brd3"
-I need to build a new iVend Add-On or implement an enhancement to an existing iVend Add-On for iVend Retail..
+I need to build a new iVend Add-On or implement an enhancement to an existing iVend Add-On for iVend Retail.
 
 Here's what it should do:
 [Describe the feature in your own words — 3-5 sentences. What problem does it solve? Who needs it? If porting from another system, mention that.]
