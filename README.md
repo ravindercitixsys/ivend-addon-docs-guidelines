@@ -330,6 +330,118 @@ docs/CRD-XXXX/3. IMPL-[FeatureName]-iVendAddOn.md
 docs/3. IMPL-[FeatureName]-iVendAddOn.md
 ```
 
+## 🔧 DEV — Development Execution
+
+**When:** IMPL is completed and development is ready to begin  
+**Input:** IMPL + PRD + (optional) existing source code
+
+```id="devexec_final"
+### 1. Inputs
+
+Read and understand the following:
+
+- Implementation Document (IMPL):  
+  docs/CRD-XXXX/3. IMPL-[FeatureName]-iVendAddOn.md  
+
+- Product Requirement Document (PRD):  
+  docs/CRD-XXXX/2. PRD-[FeatureName]-iVendAddOn.md  
+
+- Existing Add-on Source Code (if applicable):  
+  [Path to addon project / solution]  
+
+👉 If this is a single CR / standalone feature, read from:
+docs/
+
+---
+
+### 2. Determine Implementation Mode
+
+Based on IMPL and project context, decide:
+
+- **Mode A — New Add-on Development**
+  - Create project structure as per iVend Add-on standards  
+  - Implement all required components  
+
+- **Mode B — Enhancement to Existing Add-on**
+  - Identify impacted modules  
+  - Extend or modify existing implementation  
+
+---
+
+### 3. Execution Guidelines
+
+Implement the feature strictly based on IMPL:
+
+- Follow defined file structure, classes, and methods  
+- Implement business logic, validations, and error handling  
+- Ensure compatibility with:
+  - iVend Retail POS  
+  - Management Console (MC)  
+
+- Reuse existing components and utilities wherever applicable  
+
+---
+
+### 4. Coding Standards (iVend Add-on)
+
+Follow:
+
+- iVend Add-on coding standards and project structure  
+- Existing patterns used in the current add-on codebase  
+- Proper naming conventions (classes, methods, constants)  
+- Clean and modular code (separation of concerns)  
+- Centralized validation and error handling approach  
+- Avoid hardcoding (use constants/config where applicable)  
+
+---
+
+### 5. Safety & Compatibility (Critical for Enhancements)
+
+For existing add-ons:
+
+- Do NOT break existing functionality  
+- Maintain backward compatibility  
+- Validate impact on:
+  - Existing workflows  
+  - Data structures  
+  - POS behavior  
+  - MC configuration  
+
+- Apply changes in a minimally invasive manner  
+
+---
+
+### 6. Constraints
+
+- Do NOT implement functionality outside PRD/IMPL scope  
+- Do NOT skip any IMPL-defined step  
+- Do NOT introduce assumptions without validation  
+- Avoid unnecessary refactoring  
+
+---
+
+### 7. Output Requirements
+
+Provide:
+
+- Updated and/or newly created source code files  
+- Clearly highlight:
+  - New files added  
+  - Existing files modified  
+
+---
+
+### 8. Definition of Done (DoD)
+
+The task is complete only when:
+
+- Code builds successfully without errors  
+- All IMPL requirements are implemented  
+- No regression is introduced (for existing add-ons)  
+- Feature is ready for Unit Testing (UT phase)  
+
+```
+
 ---
 
 ## 4️⃣ UT — Unit Test Specification
