@@ -587,36 +587,84 @@ Read the following:
 PR Details:
 PR #[number] or [branch name]
 
-👉 If required, refer to related documents from:
-docs/CRD-XXXX/
+---
+
+## 🔀 Branch Handling (MANDATORY)
+
+* Identify the **source branch of the PR**
+
+* Check the current Git branch
+
+* If current branch is **develop (or any base/default branch)**:
+
+  * Checkout to the **PR source branch**
+
+* If already on the PR source branch:
+
+  * Continue execution
+
+👉 Do NOT perform review or save files on the wrong branch
 
 ---
+
+## 📂 Project Context (AUTO-DETECT)
+
+* Identify the **addon project root** from the PR changes
+* Locate the `docs/` folder inside the addon project
+
+👉 Do NOT use repo-level `docs/`
+👉 Always use the `docs/` folder inside the addon project
+
+---
+
+## 📄 Document Reference
+
+If required, refer to existing documents under:
+
+`[Addon Project]/docs/CRD-XXXX/`
+
+---
+
+## 🔍 PR Review
 
 Review the PR for the iVend Add-on.
 
 ---
 
-Log the review findings with:
+## 📝 Log Findings
 
-- Critical Issues  
-- Important Issues  
-- Medium Issues  
-- Positive Observations  
+* Critical Issues
+* Important Issues
+* Medium Issues
+* Positive Observations
 
 Only report issues with confidence >= 80%.
 
 ---
 
-Include:
-- Final Verdict (Approve / Request Changes)  
+## ✅ Final Verdict
+
+* Approve
+* Request Changes
 
 ---
 
-Save the document as:
-docs/CRD-XXXX/6. PR-[FeatureName]-iVendAddOn-RESULT.md
+## 💾 Output (STRICT RULE)
+
+Save the document inside the addon project:
+
+`[Addon Project]/docs/CRD-XXXX/6. PR-[FeatureName]-iVendAddOn-RESULT.md`
 
 👉 If this is a single CR / standalone feature, save it under:
-docs/6. PR-[FeatureName]-iVendAddOn-RESULT.md
+`[Addon Project]/docs/6. PR-[FeatureName]-iVendAddOn-RESULT.md`
+
+---
+
+## ⚠️ Critical Rules
+
+* Do NOT save files in `develop` branch
+* Do NOT save files outside addon project
+* Ensure file is created in the **same branch from which PR is created**
 ```
 
 ---
