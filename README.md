@@ -269,9 +269,11 @@ SECTIONS TO INCLUDE (in this order):
 10. Validation Rules
     - List only the important business rules that affect what a user can or
       cannot save/do.
+    - Present all rules as bullet points.
     - Number each rule (V-01, V-02, ...).
  
 11. Dependencies & Assumptions
+    - Present both sections using bullet points (not tables).
     - Dependencies: What must be in place before this feature can work.
     - Assumptions: What has been agreed or taken for granted during design.
  
